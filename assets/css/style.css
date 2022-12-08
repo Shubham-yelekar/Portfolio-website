@@ -498,7 +498,70 @@ main {
 
 .about-text p { margin-bottom: 15px; }
 
+/* Skills */
 
+
+
+.tech-stack {
+  position: relative;
+  background: var(--border-gradient-onyx);
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: var(--shadow-2);
+  z-index: 1;
+  margin: 1rem 0px;
+  
+
+  display: flex;
+  flex-grow: 1;
+  align-self: flex-start;
+  justify-content: space-around;
+}
+
+
+.tech-stack::before {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  background: var(--bg-gradient-jet);
+  border-radius: inherit;
+  z-index: -1;
+}
+
+@media (min-width: 240px) {
+  .skills-stack {
+    flex-direction: column;
+    width: 100%;
+  } .tech-stack {
+    
+    width: 100%;
+  }
+}
+
+.tech-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--white-1);
+}
+
+.tech-container p {
+  font-weight: 300;
+  color: var(--light-gray-70);
+}
+
+.tech-logo {
+  color: var(--light-gray-70);
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.skills-stack {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+}
 
 /**
  * #service 
@@ -552,7 +615,9 @@ main {
  * #testimonials 
  */
 
-.testimonials { margin-bottom: 30px; }
+.testimonials {
+  display: none;
+  margin-bottom: 30px; }
 
 .testimonials-title { margin-bottom: 20px; }
 
@@ -718,7 +783,9 @@ main {
  * #clients 
  */
 
-.clients { margin-bottom: 15px; }
+.clients {
+  display: none;
+   margin-bottom: 15px; }
 
 .clients-list {
   display: flex;
@@ -826,7 +893,9 @@ main {
  * skills 
  */
 
-.skills-title { margin-bottom: 20px; }
+.skills-title { 
+  
+  margin-bottom: 20px; }
 
 .skills-list { padding: 20px; }
 
@@ -1227,6 +1296,14 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 @media (min-width: 450px) {
 
+  .tech-stack {
+   
+    width: 100%;
+  }
+
+  .skills-stack {
+    flex-direction: column;
+  }
   /**
    * client
    */
@@ -1709,7 +1786,10 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .navbar-link { font-weight: var(--fw-500); }
 
-
+  .skills-stack {
+    flex-direction: row;
+    width: 100%;
+  }
 
   /**
    * ABOUT
