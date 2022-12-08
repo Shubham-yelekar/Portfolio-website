@@ -553,12 +553,13 @@ main {
 }
 
 .tech-container p {
-  font-weight: 300;
-  color: var(--light-gray-70);
+  font-weight: 600;
+  font-size: var(--fs-6);
+  color: var(--white-2);
 }
 
 .tech-logo {
-  color: var(--light-gray-70);
+  color: var(--vegas-gold);
   font-size: 48px;
   margin-bottom: 10px;
 }
