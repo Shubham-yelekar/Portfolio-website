@@ -342,12 +342,12 @@ main {
 }
 
 .info-content .title {
-  color: var(--white-1);
+  color: var(--light-gray);
   background: var(--onyx);
   font-size: var(--fs-8);
   font-weight: var(--fw-300);
   width: max-content;
-  padding: 3px 12px;
+  padding: 8px 16px;
   border-radius: 8px;
 }
 
@@ -1931,7 +1931,11 @@ textarea.form-input::-webkit-resizer { display: none; }
     text-align: center;
   }
 
-  .info-content .title { margin: auto; }
+  
+
+  .info-content .title { 
+  
+    margin: auto; }
 
   .info_more-btn { display: none; }
 
