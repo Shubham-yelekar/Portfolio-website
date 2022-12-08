@@ -1327,6 +1327,15 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 }
 
+.navbar-list { 
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+   }
+
+.navbar-link { 
+  --fs-8: 16px; }
+
 
 
 
@@ -1353,7 +1362,7 @@ textarea.form-input::-webkit-resizer { display: none; }
     --fs-4: 18px;
     --fs-6: 15px;
     --fs-7: 15px;
-    --fs-8: 12px;
+    --fs-8: 15px;
 
   }
 
@@ -1449,11 +1458,11 @@ textarea.form-input::-webkit-resizer { display: none; }
    * #NAVBAR
    */
 
-  .navbar { border-radius: 20px 20px 0 0; }
+  .navbar { border-radius: 0px 0px 0 0; }
 
-  .navbar-list { gap: 20px; }
+  
 
-  .navbar-link { --fs-8: 14px; }
+  .navbar-link { --fs-8: 18px; }
 
 
 
@@ -1635,7 +1644,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .has-scrollbar::-webkit-scrollbar-button { width: 100px; }
 
-
+  
 
   /**
    * SIDEBAR
@@ -1784,6 +1793,7 @@ textarea.form-input::-webkit-resizer { display: none; }
     border-radius: 0 20px;
     padding: 0 20px;
     box-shadow: none;
+    
   }
 
   .navbar-list {
